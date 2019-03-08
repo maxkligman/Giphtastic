@@ -59,4 +59,20 @@ $("button").on("click", function() {
    
 });
 
+var buttonClasses = ["btn btn-primary", "btn btn-secondary", "btn btn-success", "btn btn-warning", "btn btn-light", "btn btn-dark", "btn btn-info", "btn btn-danger"];
 
+$("#create-new-button").on("click", function(){
+    console.log($("textarea").val());
+    var newButton = $("<button>").text($("#tag-input").val());
+    
+    function buttonClassSelector (){
+        return Math.floor(Math.random() * Math.floor(8))
+        
+    };
+
+
+
+
+
+
+});
